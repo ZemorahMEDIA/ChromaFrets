@@ -1,0 +1,239 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #1a1a1a, #000000, #1a1a1a);
+  background-size: 400% 400%;
+  animation: metallicShine 20s linear infinite;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header h1:first-child {
+  font-family: cursive;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+#chromafrets-title {
+  font-size: 0.9em;
+  margin-top: 0;
+  font-family: 'Arial Black', sans-serif;
+  color: black;
+}
+
+@keyframes rainbowWave {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes rainbowText {
+  0% {
+    color: red;
+  }
+  14% {
+    color: orange;
+  }
+  28% {
+    color: yellow;
+  }
+  42% {
+    color: green;
+  }
+  57% {
+    color: blue;
+  }
+  71% {
+    color: indigo;
+  }
+  85% {
+    color: violet;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@keyframes tiltShift {
+  0% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes metallicShine {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#app-title {
+  background: linear-gradient(45deg, #333, #222, #333);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  width: 800px;
+  text-align: left;
+  margin-bottom: 20px;
+  align-items: flex-end;
+}
+
+#chromafrets-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+  font-family: 'Dancing Script', cursive;
+}
+
+#jms-title {
+  margin-right: 15px;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+}
+
+#chromafrets-title {
+  margin-bottom: 0px;
+  margin-top: 2px;
+  width: 400px;
+  display: flex;
+}
+
+#chromafrets-title span {
+  animation: rainbowText 5s linear infinite, tiltShift 5s infinite alternate;
+  display: inline-block;
+}
+
+/* Tabs Section */
+#tabs-section {
+  margin: 0 auto;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tabs {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  border-bottom: 1px solid #444;
+}
+
+#tabs .tab {
+  padding: 12px 24px;
+  margin-right: -1px;
+  background-color: #1e1e1e;
+  color: #ccc;
+  cursor: pointer;
+  border: 1px solid #444;
+  border-bottom: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  position: relative;
+  top: 1px;
+}
+
+#tabs .tab:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+#tabs .tab.active {
+  background-color: #333;
+  border-bottom: 1px solid #333;
+  color: #fff;
+  font-weight: bold;
+}
+
+#tab-contents {
+  width: 100%;
+  border: 1px solid #444;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #ccc;
+}
+
+.tab-content {
+  display: none;
+  width: 100%;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Instrument Selector */
+#instrument-selector {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#instrument-selector button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.5), inset 2px 2px 5px rgba(255, 255, 255, 0.1);
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+#instrument-selector button.active {
+  background-color: #555;
+  box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.1), inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Fretboard Section */
+#fretboard-section {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  width: 800px;
+}
+
+#fretboard-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#fretboard {
+  background-color: white;
+}

@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Martin Skyrie's ChromaFrets</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arial+Black&display=swap" rel="stylesheet">
+  <script src="script.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <div id="app-title">
+      <div id="chromafrets-wrapper">
+        <span id="jms-title">John Martin Skyrie's</span>
+        <h1 id="chromafrets-title">
+          <span>C</span>
+          <span>h</span>
+          <span>r</span>
+          <span>o</span>
+          <span>m</span>
+          <span>a</span>
+          <span>F</span>
+          <span>r</span>
+          <span>e</span>
+          <span>t</span>
+          <span>s</span>
+        </h1>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="tabs-section">
+      <div id="tabs">
+        <button data-tab="instrument" class="tab active">Instrument</button>
+        <button data-tab="scaleculator" class="tab">ScaleCulator</button>
+        <button data-tab="chordculator" class="tab">ChordCulator</button>
+        <button data-tab="circles" class="tab">Circles</button>
+        <button data-tab="arrows" class="tab">Arrows</button>
+        <button data-tab="memory" class="tab">Memory</button>
+        <button data-tab="notepad" class="tab">NotePad</button>
+      </div>
+
+      <div id="tab-contents">
+        <div id="instrument-content" class="tab-content active">
+          <div id="instrument-selector">
+            <button data-instrument="6-string-guitar">6-Strings Guitar</button>
+            <button data-instrument="4-string-bass">4-Strings Bass</button>
+            <button data-instrument="5-string-bass">5-Strings Bass</button>
+            <button data-instrument="6-string-bass">6-Strings Bass</button>
+          </div>
+        </div>
+
+        <div id="scaleculator-content" class="tab-content">
+          <p>ScaleCulator content goes here.</p>
+        </div>
+
+        <div id="chordculator-content" class="tab-content">
+          <p>ChordCulator content goes here.</p>
+        </div>
+
+        <div id="circles-content" class="tab-content">
+          <p>Circles content goes here.</p>
+        </div>
+
+        <div id="arrows-content" class="tab-content">
+          <p>Arrows content goes here.</p>
+        </div>
+
+        <div id="memory-content" class="tab-content">
+          <p>Memory content goes here.</p>
+        </div>
+
+        <div id="notepad-content" class="tab-content">
+          <p>NotePad content goes here.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="fretboard-section">
+      <div id="fretboard-container">
+        <svg id="fretboard"></svg>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024</p>
+  </footer>
+</body>
+</html>
